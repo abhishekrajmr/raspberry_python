@@ -1,0 +1,11 @@
+1 . insert mmc card
+2 . run xhost si:localuser:root
+3 . open gparted or discs
+4 . put only partition on mmc and format mmc to fat32 
+5 . goto img dir and run df -h and find mmc /dev/sdb
+6 . run sudo dd bs=4M if=2017-11-29-raspbian-stretch.img of=/dev/sdb conv=fsync
+7 . let yello led blink 
+8 . login : pi
+    password : raspberry
+
+
